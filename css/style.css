@@ -1,0 +1,346 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* Utilities */
+.container {
+    max-width: 1280px;
+    padding: 0 1.5rem;
+    margin: auto;
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+ul {
+    list-style: none;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    transition: all 0.5s;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-light {
+    color: #333;
+    background: #f4f4f4;
+}
+
+.btn-main {
+    color: #fff;
+    background: #333;
+}
+
+.btn-light:hover,
+.btn-main:hover {
+    background: #e8787e;
+}
+
+.lead {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.bottom-line {
+    height: 2px;
+    width: 5rem;
+    background: #e8787e;
+    display: block;
+    margin: 0 auto 1rem auto;  
+}
+
+.section-title {
+    font-size: 2rem;
+    display: block;
+    padding-bottom: 0.5rem;
+    text-align: center;
+    font-weight: 100;
+    text-transform: uppercase; 
+    margin-top: 3rem;
+}
+
+
+/* Navbar */
+#main-nav {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+#main-nav ul {
+    display: flex;
+}
+
+#main-nav li {
+    padding: 1rem 1.5rem;
+}
+
+#main-nav li a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    border-bottom: 3px transparent solid;
+    padding-bottom: 0.5rem;
+    transition: border-color 0.5s; 
+}
+
+#main-nav li a:hover {
+    border-color: #ccc;
+}
+
+#main-nav li .current {
+    border-color: #e8787e;
+}
+
+/* Header */
+#header {
+    background: url("../img/background.jpg") no-repeat center center/cover;
+    height: 100vh;
+    color: #fff;
+}
+
+#header .header-content {
+    text-align: center;
+    padding-top: 20%;
+}
+
+#header .header-content h1 {
+    font-size: 4rem;
+    line-height: 1.2;
+}
+
+#header-inner {
+    background: url("../img/background.jpg") no-repeat 20% 25% / cover;
+    color: #fff;
+    border-bottom: 3px solid #e8787e;
+}
+
+/* About A*/
+#about-a .about-info {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+#about-a .about-info .bio {
+    line-height: 1.5;
+}
+
+#about-a .about-info img {
+    width: 90%;
+}
+
+#about-a .about-info .bio {
+    border-left: 3px solid #e8787e;
+    padding: 0.8rem;
+    background: #f4f4f4;
+}
+
+/* About B */
+#about-b .social {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+}
+
+/* About C */
+#about-c {
+    background: #333;
+    padding-bottom: 3rem;
+    color: #fff;
+}
+
+#about-c .progress {
+    overflow: hidden;
+    height: 20px;
+    background: #ccc;
+    border-radius: 2px;
+    margin-bottom: 0.6rem;
+}
+
+#about-c .progress div {
+    height: 100%;
+    color: #fff;
+    text-align: center;
+    background: #e8787e;
+}
+
+#about-c .programming {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+}
+
+/* About D */
+#about-d {
+    background: #f4f4f4;
+}
+
+#about-d .client-logos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+#about-d .client-logos img {
+    width: 70%;
+}
+
+/* Footer */
+#main-footer {
+    background: #000;
+    color: #fff;
+    height: 5rem;
+}
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    height: 5rem;
+    align-items: center; 
+}
+.footer-content .social .fab {
+    margin-right: 1rem;
+    border: 2px #fff solid;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    line-height: 20px;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+.footer-content .social .fab:hover {
+    background: #e8787e;
+}
+
+/* Contact Page */
+#contact-a {
+    padding-bottom: 3rem;
+}
+#contact-a .text-fields {
+    display: grid;
+    grid-template-areas: 
+    'name email'
+    'subject phone'
+    'message message';
+    grid-gap: 1.2rem;
+    margin-bottom: 1.2rem;
+}
+
+#contact-a .text-fields .name-input { grid-area: name; }
+#contact-a .text-fields .subject-input { grid-area: subject;}
+#contact-a .text-fields .email-input { grid-area: email; }
+#contact-a .text-fields .phone-input { grid-area: phone; }
+#contact-a .text-fields .message-input {
+    grid-area: message;
+    height: 100px;
+}
+
+#contact-a .text-fields .text-input {
+    padding: 0.5rem 1rem;
+    border: 1px solid #918e8e;
+    border-radius: 4px;
+}
+
+button[type='submit'] {
+    width: 50%;
+}
+
+#contact-b {
+    color: #fff;
+    background: #333;
+    padding: 3.4rem 0;
+}
+
+#contact-b .contact-info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+}
+
+#contact-b .contact-info i {
+    margin-bottom: 0.75rem;
+}
+
+@media (max-width : 768px) {
+    #header .header-content h1 {
+        font-size: 2.2rem;
+        margin-top: 40%;
+    }
+    
+    #about-a .about-info {
+        grid-template-columns: 1fr;
+    }
+
+    #about-a .about-info img {
+        width: 100%;
+        padding-bottom: 1rem;
+    } 
+}
+
+
+@media (max-width : 600px) {
+    .section-title {
+        font-size: 1.5rem;
+        margin-top: 1.5rem;
+    }
+
+    #main-nav {
+        display: flex;
+        justify-content: center;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    #header .header-content h1 {
+        font-size: 2.2rem;
+        margin-top: 30%;
+    }
+
+    #main-footer {
+        height: 7rem;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        padding: 1rem;
+        height: 5rem;
+    }
+
+    #contact-a .text-fields {
+        grid-template-areas:
+          'name'
+          'subject'
+          'email'
+          'phone'
+          'message';
+    }
+
+    #contact-b, #about-b, #about-b .social, #about-d .client-logos{
+        padding: 1.5rem 0;
+    }
+
+    #contact-b .contact-info {
+        display: grid;
+        grid-template-columns: 1fr;
+        text-align: center;
+        grid-gap: 1.5rem;
+    }
+
+}
